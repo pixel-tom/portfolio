@@ -10,8 +10,8 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="h-[435px] w-[330px] bg-[#272727] rounded-[10px] transition-transform duration-300 ease-in-out hover:-translate-y-1">
-      <div className="h-[435px] w-[330px] -translate-y-[8px] -translate-x-[8px] transition-transform duration-300 ease-in-out hover:-translate-y-[10px] hover:-translate-x-[10px] mb-1 flex flex-col bg-[#C4BEB1] border-2 border-[#272727] rounded-[10px]">
+    <div className="h-[420px] w-[330px] bg-[#272727] rounded-[10px] transition-transform duration-300 ease-in-out hover:-translate-y-1">
+      <div className="h-[420px] w-[330px] -translate-y-[8px] -translate-x-[8px] transition-transform duration-300 ease-in-out hover:-translate-y-[10px] hover:-translate-x-[10px] mb-1 flex flex-col bg-[#C4BEB1] border-2 border-[#272727] rounded-[10px]">
         <div className="w-full h-[214px]">
           <Image
             src={project.image}
