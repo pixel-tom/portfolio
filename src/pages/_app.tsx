@@ -12,13 +12,13 @@ export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 6000); // 6000 milliseconds
+    }, 5000); // 6000 milliseconds
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <>
+    <div className="min-h-screen">
       <CSSTransition
         in={isLoading}
         timeout={500}
@@ -29,9 +29,9 @@ export default function App({ Component, pageProps }: AppProps) {
       </CSSTransition>
       <Header />
       <Footer />
-      <div className="relative z-40">
+      <div className="relative h-full">
         <Component {...pageProps} />
       </div>
-    </>
+    </div>
   );
 }

@@ -19,7 +19,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #aea799;
-  padding: 40px 67px;
+  
 }
 
 @layer utilities {
@@ -85,4 +85,67 @@ body {
   font-family: "Courier New", Courier, monospace;
 
   max-height: 300px;
+}
+
+/* styles/globals.css */
+
+.fade-in {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInGrow 1s forwards;
+}
+
+@keyframes fadeInGrow {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.project-card {
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.confetti {
+  position: absolute;
+  top: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #272727;
+  animation: floatDown 7s linear infinite;
+  opacity: 0;
+  z-index: -1;
+}
+
+@keyframes floatDown {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  15% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
 }

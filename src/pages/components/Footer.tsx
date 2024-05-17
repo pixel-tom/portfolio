@@ -6,7 +6,7 @@ const inter = Inconsolata({ subsets: ["latin"] });
 
 export default function Footer() {
   return (
-    <div className={`fixed bottom-10 left-0 px-20 flex justify-between w-full ${inter.className}`}>
+    <div className={`z-40 fixed bottom-10 left-0 px-20 flex justify-between w-full ${inter.className}`}>
       <div className="flex gap-6 text-[#272727]">
         <Link href={'/projects'}>PROJECTS</Link>
         <p className="font-bold">|</p>
