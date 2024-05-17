@@ -1,6 +1,6 @@
 // Projects.tsx
 import projects from "../../data/projects";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../../components/ProjectCard";
 import { Inconsolata } from "next/font/google";
 
 const inter = Inconsolata({ subsets: ["latin"] });

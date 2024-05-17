@@ -3,8 +3,8 @@ import type { AppProps } from "next/app";
 import { useEffect, useState } from "react";
 import Loading from "./loading"; // Adjust the import path as necessary
 import { CSSTransition } from "react-transition-group";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isLoading, setIsLoading] = useState(true);
