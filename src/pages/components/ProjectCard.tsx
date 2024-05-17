@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Project } from "../../constants/projects";
+import { Project } from "../../data/projects";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { Key } from "react";
 

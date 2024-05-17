@@ -1,5 +1,5 @@
 // Projects.tsx
-import projects from "../../constants/projects";
+import projects from "../../data/projects";
 import ProjectCard from "../components/ProjectCard";
 import { Inconsolata } from "next/font/google";
 
