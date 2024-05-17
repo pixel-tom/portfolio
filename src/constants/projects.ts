@@ -8,7 +8,7 @@ export interface Project {
     liveLink: string;
     builtWith: string[];
   }
-  
+
   const projects: Project[] = [
     {
       id: 1,
@@ -40,4 +40,6 @@ export interface Project {
   ];
   
   export default projects;
+
+
   
