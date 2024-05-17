@@ -11,7 +11,7 @@ export default function Header() {
       confettiContainer.className = 'confetti-container';
       document.body.appendChild(confettiContainer);
 
-      for (let i = 0; i < 100; i++) {
+      for (let i = 0; i < 200; i++) {
         const confetti = document.createElement('div');
         confetti.className = 'confetti';
         confetti.textContent = 'gm';
@@ -22,7 +22,7 @@ export default function Header() {
 
       setTimeout(() => {
         confettiContainer.remove();
-      }, 6000); // Duration for confetti to disappear
+      }, 12000); // Match the duration of the animation
     };
 
     const gmButton = document.getElementById('gm-button');

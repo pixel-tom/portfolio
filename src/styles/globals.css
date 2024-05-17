@@ -130,22 +130,28 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: #272727;
-  animation: floatDown 7s linear infinite;
+  animation: floatDown 5s linear ;
   opacity: 0;
   z-index: -1;
 }
 
 @keyframes floatDown {
   0% {
-    transform: translateY(0);
+    transform: translateY(0vh);
+    opacity: 0;
+  }
+  10% {
     opacity: 1;
   }
-  15% {
+  70% {
     transform: translateY(100vh);
+    opacity: 1;
+  }
+  90% {
     opacity: 0;
   }
   100% {
-    transform: translateY(100vh);
+    transform: translateY(120vh); /* Move past the bottom of the screen */
     opacity: 0;
   }
 }
