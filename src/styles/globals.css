@@ -18,16 +18,71 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #aea799;
+  padding: 40px 67px;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* styles/globals.css */
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+@keyframes heartbeat {
+  0%,
+  28%,
+  70%,
+  100% {
+    transform: scale(1);
+  }
+  14%,
+  42% {
+    transform: scale(1.15);
+  }
+}
+
+.heartbeat-animation {
+  animation: heartbeat 1.1s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@keyframes flashing-underscore {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flashing-underscore {
+  animation: flashing-underscore 1s infinite;
+}
+
+.terminal {
+  font-family: "Courier New", Courier, monospace;
+
+  max-height: 300px;
 }
